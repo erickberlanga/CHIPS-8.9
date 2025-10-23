@@ -5,6 +5,18 @@ class MoviesController < ApplicationController
     # will render app/views/movies/show.<extension> by default
   end
 
+  # Show all movies with the same director as the given movie
+  def show_by_director
+    @movie = Movie.find(params[:id])
+
+    if @movie.director.blank?
+      flash[:notice] = "'#{@movie.title}' has no director info"
+      redirect_to movies_path and return
+    end
+
+    @movies = @movie.others_by_same_director
+  end
+
   def index
     @movies = Movie.all
   end
@@ -43,19 +55,5 @@ class MoviesController < ApplicationController
   def movie_params
     params.require(:movie).permit(:title, :rating, :description, :release_date, :director)
   end
-
-  def show_by_director
-    @movie = Movie.find(params[:id])
-  
-    if @movie.director.blank?
-      flash[:notice] = "'#{@movie.title}' has no director info"
-      redirect_to movies_path
-    else
-      @movies = Movie.where(director: @movie.director).where.not(id: @movie.id)
-    end
-  end
-  
-  
-
 
 end
