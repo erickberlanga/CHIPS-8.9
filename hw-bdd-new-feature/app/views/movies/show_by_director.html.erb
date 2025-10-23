@@ -1,5 +1,5 @@
 <!--  This file is app/views/movies/show_by_director.html.erb -->
-<h2>Other Movies by <%= @movie.director %></h2>
+<h2>Other Movies by <%= @movie&.director || 'Unknown Director' %></h2>
 
 <table class="table table-striped col-md-12" id="movies">
   <thead>
@@ -11,7 +11,7 @@
     </tr>
   </thead>
   <tbody>
-    <% @movies.each do |movie| %>
+    <% (@movies || []).each do |movie| %>
       <tr>
         <td>
           <%= movie.title %>
