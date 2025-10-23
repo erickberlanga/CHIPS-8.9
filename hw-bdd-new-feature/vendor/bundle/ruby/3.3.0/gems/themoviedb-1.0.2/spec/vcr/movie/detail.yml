@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/movie/22855?api_key=8a221fc31fcdf12a8af827465574ffc9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+      Cache-Control:
+      - public, max-age=28800
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Mon, 09 Apr 2018 11:50:54 GMT
+      Etag:
+      - '"019ec79deb19c6067557be2c84a94d28"'
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '9965'
+      X-Memc-Expires:
+      - '18835'
+      X-Memc-Key:
+      - 720d2479c85989c759a432c326810e82
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '39'
+      X-Ratelimit-Reset:
+      - '1523274664'
+      Content-Length:
+      - '1593'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvYU15RU1HdVcyTlYzQTB3aHVFTTdWS3A2TTczLmpwZyIsImJlbG9uZ3NfdG9fY29sbGVjdGlvbiI6eyJpZCI6MjkwOTMzLCJuYW1lIjoiU3VwZXJtYW4gLyBCYXRtYW4gKEFuaW1hdGVkKSBDb2xsZWN0aW9uIiwicG9zdGVyX3BhdGgiOiIvdERlMzJoTENIeEljR05Fd211TDN1OWRvQ3FYLmpwZyIsImJhY2tkcm9wX3BhdGgiOiIvbGVvTHlNdlVxMnFFeEZaTXRJOFhBSE5XUTk0LmpwZyJ9LCJidWRnZXQiOjAsImdlbnJlcyI6W3siaWQiOjE2LCJuYW1lIjoiQW5pbWF0aW9uIn0seyJpZCI6MjgsIm5hbWUiOiJBY3Rpb24ifSx7ImlkIjoxMiwibmFtZSI6IkFkdmVudHVyZSJ9XSwiaG9tZXBhZ2UiOiJodHRwczovL3d3dy53YXJuZXJicm9zLmNvbS9zdXBlcm1hbmJhdG1hbi1wdWJsaWMtZW5lbWllcyIsImlkIjoyMjg1NSwiaW1kYl9pZCI6InR0MTM5ODk0MSIsIm9yaWdpbmFsX2xhbmd1YWdlIjoiZW4iLCJvcmlnaW5hbF90aXRsZSI6IlN1cGVybWFuL0JhdG1hbjogUHVibGljIEVuZW1pZXMiLCJvdmVydmlldyI6IlVuaXRlZCBTdGF0ZXMgUHJlc2lkZW50IExleCBMdXRob3IgdXNlcyB0aGUgb25jb21pbmcgdHJhamVjdG9yeSBvZiBhIEtyeXB0b25pdGUgbWV0ZW9yIHRvIGZyYW1lIFN1cGVybWFuIGFuZCBkZWNsYXJlIGEgJDEgYmlsbGlvbiBib3VudHkgb24gdGhlIGhlYWRzIG9mIHRoZSBNYW4gb2YgU3RlZWwgYW5kIGhpcyDigJhwYXJ0bmVyIGluIGNyaW1l4oCZLCBCYXRtYW4uIEhlcm9lcyBhbmQgdmlsbGFpbnMgYWxpa2UgbGF1bmNoIGEgcmVsZW50bGVzcyBwdXJzdWl0IG9mIFN1cGVybWFuIGFuZCBCYXRtYW4sIHdobyBtdXN0IHVuaXRl4oCUYW5kIHJlY3J1aXQgaGVscOKAlHRvIHRyeSBhbmQgc3RhdmUgb2ZmIHRoZSBhY3Rpb24tcGFja2VkIG9uc2xhdWdodCwgc3RvcCB0aGUgbWV0ZW9yIEx1dGhvcnMgcGxvdC4iLCJwb3B1bGFyaXR5IjoxMC4yMDAxMDksInBvc3Rlcl9wYXRoIjoiL2JKQlp4ekZIZlRBT3RCZzhmT0NDYUJtaDRoRi5qcGciLCJwcm9kdWN0aW9uX2NvbXBhbmllcyI6W3siaWQiOjQyOSwibG9nb19wYXRoIjoiLzJUYzFQM0FjOE00NzluYVBwMWtZVDNpekxTNS5wbmciLCJuYW1lIjoiREMgQ29taWNzIiwib3JpZ2luX2NvdW50cnkiOiJVUyJ9LHsiaWQiOjQ4MTEsImxvZ29fcGF0aCI6Ii83eHltNUNuTDRMY01QYVdwcDUxY04xdjczQVIucG5nIiwibmFtZSI6Ildhcm5lciBQcmVtaWVyZSIsIm9yaWdpbl9jb3VudHJ5IjoiIn1dLCJwcm9kdWN0aW9uX2NvdW50cmllcyI6W3siaXNvXzMxNjZfMSI6IlVTIiwibmFtZSI6IlVuaXRlZCBTdGF0ZXMgb2YgQW1lcmljYSJ9XSwicmVsZWFzZV9kYXRlIjoiMjAwOS0wOS0yOSIsInJldmVudWUiOjAsInJ1bnRpbWUiOjY3LCJzcG9rZW5fbGFuZ3VhZ2VzIjpbeyJpc29fNjM5XzEiOiJlbiIsIm5hbWUiOiJFbmdsaXNoIn1dLCJzdGF0dXMiOiJSZWxlYXNlZCIsInRhZ2xpbmUiOiJObyBvbmUgaXMgYWJvdmUgdGhlIGxhdy4iLCJ0aXRsZSI6IlN1cGVybWFuL0JhdG1hbjogUHVibGljIEVuZW1pZXMiLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6Ni44LCJ2b3RlX2NvdW50IjoxOTl9
+    http_version: 
+  recorded_at: Mon, 09 Apr 2018 11:50:54 GMT
+recorded_with: VCR 4.0.0
